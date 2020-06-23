@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.1](https://www.github.com/kenoxa/svelte-jsx/compare/v1.0.0...v1.0.1) (2020-06-23)
+
+
+### Bug Fixes
+
+* **exports:** use default as esm export to support new bundlers and jspm.dev ([80465af](https://www.github.com/kenoxa/svelte-jsx/commit/80465afd0c265e49a144b356d6c2a77c02a50d4b))
+
 ## 1.0.0 (2020-06-23)
 
 
