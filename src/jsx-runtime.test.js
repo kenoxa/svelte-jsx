@@ -33,7 +33,7 @@ describe('jsx', () => {
     const handleClick = jest.fn()
 
     const { getByRole } = render(
-      <button onClick={handleClick}>
+      <button type="button" onClick={handleClick}>
         Hello <strong>World</strong>!
       </button>,
     )
