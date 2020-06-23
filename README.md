@@ -122,10 +122,10 @@ Some notable differences are:
 
 ## Related Projects
 
-- [svelte-htm]: [**H**yperscript **T**agged **M**arkup](https://www.npmjs.com/package/htm) for svelte; a jsx-like [syntax](https://www.npmjs.com/package/htm#syntax-like-jsx-but-also-lit) using [Tagged Templates]
-- [svelte-hyperscript]: the core of this implementation
-- [svelte-fragment-component]: a utility component
-- [@testing-library/svelte](https://testing-library.com/docs/svelte-testing-library/intro): helps to test UI components in a user-centric way
+- [svelte-htm] - [**H**yperscript **T**agged **M**arkup](https://www.npmjs.com/package/htm) for svelte; a jsx-like [syntax](https://www.npmjs.com/package/htm#syntax-like-jsx-but-also-lit) using [Tagged Templates]
+- [svelte-hyperscript] - the core of this implementation
+- [svelte-fragment-component] - a utility component
+- [@testing-library/svelte](https://testing-library.com/docs/svelte-testing-library/intro) - helps to test UI components in a user-centric way
 - [reactjs/rfcs/0000-create-element-changes](https://github.com/reactjs/rfcs/blob/createlement-rfc/text/0000-create-element-changes.md)
 
 ## Support
