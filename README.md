@@ -67,11 +67,10 @@ render(
 
 ```js
 import { render, fireEvent } from '@testing-library/svelte'
-import html from 'svelte-jsx'
 
 import Button from '../src/Button.svelte'
 
-test('should render', () => {
+test('should render', async () => {
   let clicked = 0
   const { getByRole } = render(<Button onClick={() => (clicked += 1)}>Click Me!</Button>)
 
@@ -100,7 +99,7 @@ Some notable differences are:
   import userEvent from '@testing-library/user-event'
   import { writable, get } from 'svelte/store'
 
-  test('write into an input', () => {
+  test('write into an input', async () => {
     const text = writable()
     const { getByRole } = render(<input bind_value={text}>)
 
