@@ -7,19 +7,19 @@
   "exports": {
     "./package.json": "./package.json",
     ".": {
-      "import": "./dist/esm/jsx.js",
       "require": "./dist/cjs/jsx.js",
-      "umd": "./dist/umd/jsx.js"
+      "umd": "./dist/umd/jsx.js",
+      "default": "./dist/esm/jsx.js"
     },
     "./jsx-runtime": {
-      "import": "./dist/esm/jsx.js",
       "require": "./dist/cjs/jsx.js",
-      "umd": "./dist/umd/jsx.js"
+      "umd": "./dist/umd/jsx.js",
+      "default": "./dist/esm/jsx.js"
     },
     "./jsx-dev-runtime": {
-      "import": "./dist/esm/jsx.js",
       "require": "./dist/cjs/jsx.js",
-      "umd": "./dist/umd/jsx.js"
+      "umd": "./dist/umd/jsx.js",
+      "default": "./dist/esm/jsx.js"
     }
   },
   "module": "./dist/esm/jsx.js",
