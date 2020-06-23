@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.2](https://www.github.com/kenoxa/svelte-jsx/compare/v1.0.1...v1.0.2) (2020-06-23)
+
+
+### Bug Fixes
+
+* run build before publish ([979bdb0](https://www.github.com/kenoxa/svelte-jsx/commit/979bdb0e516b5d96c63bd350c6ba68a131842646))
+
 ### [1.0.1](https://www.github.com/kenoxa/svelte-jsx/compare/v1.0.0...v1.0.1) (2020-06-23)
 
 
