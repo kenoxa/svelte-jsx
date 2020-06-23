@@ -29,7 +29,7 @@ npm install --save-dev svelte-jsx
 
 ### Babel Configuration
 
-This packages allows to use svelte with [jsx] (see [@babel/plugin-transform-react-jsx](https://babeljs.io/docs/en/babel-plugin-transform-react-jsx)). A [working babel](https://babeljs.io/setup) is therefore required.
+This packages allows to use svelte with [jsx] (see [@babel/plugin-transform-react-jsx](https://babeljs.io/docs/en/babel-plugin-transform-react-jsx)). A [working babel setup](https://babeljs.io/setup) is therefore required.
 
 In your [babel configuration file](https://babeljs.io/docs/en/configuration) add:
 
@@ -41,7 +41,7 @@ In your [babel configuration file](https://babeljs.io/docs/en/configuration) add
 }
 ```
 
-If you already use [@babel/preset-react](https://babeljs.io/docs/en/babel-preset-react) make sure `runtime` is set to `automatic`:
+Or if you already use [@babel/preset-react](https://babeljs.io/docs/en/babel-preset-react) make sure `runtime` is set to `automatic`:
 
 ```json
 {
@@ -49,7 +49,7 @@ If you already use [@babel/preset-react](https://babeljs.io/docs/en/babel-preset
 }
 ```
 
-If this not an option to use `svelte-jsx` as an `importSource` globally for the project, it is possible to use the [@jsxImportSource](https://babeljs.io/docs/en/babel-plugin-transform-react-jsx#customizing-the-automatic-runtime-import) pragma within a file:
+If it not an option to use `svelte-jsx` as an `importSource` globally for the project, it is possible to use the [@jsxImportSource](https://babeljs.io/docs/en/babel-plugin-transform-react-jsx#customizing-the-automatic-runtime-import) pragma within a file:
 
 ```js
 /** @jsxImportSource svelte-jsx */
@@ -87,7 +87,7 @@ test('should render', () => {
 
 [jsx] currently does not allow to use `:` in attribute/property names. As a workaround every `:` can be replaced be `_` (for example `bind_value` is converted to `bind:value` for svelte). For event listeners we support the standard jsx naming convention `onEventname` (this is converted to `on:eventname` in svelte) as well.
 
-For the sake of best compatibility we convert the `className` attribute to `class`.
+For the sake of best compatibility we convert the `className` attribute to `class` for svelte.
 
 We [aim to support](https://github.com/sastan/svelte-hyperscript#feature-set) all svelte features. In some cases this is not possible. For those cases we provided feasible workarounds. See [svelte-hyperscript] for further details.
 
