@@ -20,9 +20,7 @@ export function jsx(type, { children = [], ...props } /* , maybeKey */) {
 
 // See https://github.com/reactjs/rfcs/blob/createlement-rfc/text/0000-create-element-changes.md#always-pass-children-as-props
 // For the moment we do not distinguish static children from dynamic ones
-export function jsxs(type, props, maybeKey) {
-  return jsx(type, props, maybeKey)
-}
+export const jsxs = jsx
 
 // For the moment there is not special development handling
 // function jsxDEV(type, props , maybeKey, isStaticChildren, source, self)

@@ -36,6 +36,6 @@ module.exports = (api) => {
           importSource: 'svelte-jsx', // Defaults to react (only in automatic runtime)
         },
       ],
-    ],
+    ].filter(Boolean),
   }
 }
