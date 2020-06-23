@@ -1,0 +1,26 @@
+{
+  "envs": ["es2020", "browser"],
+  "space": true,
+  "prettier": true,
+  "extends": [
+    "xo-react",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
+    "plugin:jest-dom/recommended",
+    "plugin:testing-library/recommended"
+  ],
+  "overrides": [
+    {
+      "files": "src/**/*.js",
+      "nodeVersion": ">=14"
+    }
+  ],
+  "settings": {
+    "react": {
+      "version": "16.3"
+    }
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  }
+}
