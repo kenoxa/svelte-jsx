@@ -53,18 +53,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sastan/svelte-jsx.git"
+    "url": "git+https://github.com/kenoxa/svelte-jsx.git"
   },
   "keywords": [
     "svelte",
     "jsx"
   ],
-  "author": "Sascha Tandel <s.tandel@me.com>",
+  "author": "Sascha Tandel <s.tandel@kenoxa.de>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sastan/svelte-jsx/issues"
+    "url": "https://github.com/kenoxa/svelte-jsx/issues"
   },
-  "homepage": "https://github.com/sastan/svelte-jsx#readme",
+  "homepage": "https://github.com/kenoxa/svelte-jsx#readme",
   "devDependencies": {
     "@babel/core": "^7.10.3",
     "@babel/plugin-transform-runtime": "^7.10.3",

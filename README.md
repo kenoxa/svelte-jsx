@@ -2,12 +2,12 @@
 
 > [jsx] for [svelte](https://svelte.dev/)
 
-[![License](https://badgen.net/npm/license/svelte-jsx)](https://github.com/sastan/svelte-jsx/blob/main/LICENSE)
+[![License](https://badgen.net/npm/license/svelte-jsx)](https://github.com/kenoxa/svelte-jsx/blob/main/LICENSE)
 [![Latest Release](https://badgen.net/npm/v/svelte-jsx)](https://www.npmjs.com/package/svelte-jsx)
 [![View changelog](https://badgen.net/badge/%E2%80%8B/Explore%20Changelog/green?icon=awesome)](https://changelogs.xyz/svelte-jsx)
 
-[![CI](https://github.com/sastan/svelte-jsx/workflows/CI/badge.svg)](https://github.com/sastan/svelte-jsx/actions?query=branch%3Amain+workflow%3ACI)
-[![Coverage Status](https://badgen.net/coveralls/c/github/sastan/svelte-jsx/main)](https://coveralls.io/github/sastan/svelte-jsx?branch=main)
+[![CI](https://github.com/kenoxa/svelte-jsx/workflows/CI/badge.svg)](https://github.com/kenoxa/svelte-jsx/actions?query=branch%3Amain+workflow%3ACI)
+[![Coverage Status](https://badgen.net/coveralls/c/github/kenoxa/svelte-jsx/main)](https://coveralls.io/github/kenoxa/svelte-jsx?branch=main)
 [![PRs Welcome](https://badgen.net/badge/PRs/welcome/purple)](http://makeapullrequest.com)
 [![Conventional Commits](https://badgen.net/badge/Conventional%20Commits/1.0.0/cyan)](https://conventionalcommits.org)
 
@@ -89,7 +89,7 @@ test('should render', () => {
 
 For the sake of best compatibility we convert the `className` attribute to `class` for svelte.
 
-We [aim to support](https://github.com/sastan/svelte-hyperscript#feature-set) all svelte features. In some cases this is not possible. For those cases we provided feasible workarounds. See [svelte-hyperscript] for further details.
+We [aim to support](https://github.com/kenoxa/svelte-hyperscript#feature-set) all svelte features. In some cases this is not possible. For those cases we provided feasible workarounds. See [svelte-hyperscript] for further details.
 
 Some notable differences are:
 
@@ -130,7 +130,7 @@ Some notable differences are:
 
 ## Support
 
-This project is free and open-source, so if you think this project can help you or anyone else, you may [star it on GitHub](https://github.com/sastan/svelte-jsx). Feel free to [open an issue](https://github.com/sastan/svelte-jsx/issues) if you have any idea, question, or you've found a bug.
+This project is free and open-source, so if you think this project can help you or anyone else, you may [star it on GitHub](https://github.com/kenoxa/svelte-jsx). Feel free to [open an issue](https://github.com/kenoxa/svelte-jsx/issues) if you have any idea, question, or you've found a bug.
 
 ## Contribute
 
@@ -152,7 +152,7 @@ We are following the [Conventional Commits](https://www.conventionalcommits.org)
 
 ## License
 
-`svelte-jsx` is open source software [licensed as MIT](https://github.com/sastan/svelte-jsx/blob/main/LICENSE).
+`svelte-jsx` is open source software [licensed as MIT](https://github.com/kenoxa/svelte-jsx/blob/main/LICENSE).
 
 [tagged templates]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates
 [all modern browsers]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Browser_compatibility
