@@ -1,6 +1,6 @@
 {
   "name": "svelte-jsx",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "jsx for svelte",
   "source": "src/jsx-runtime.js",
   "main": "./dist/cjs/jsx.js",
