@@ -1,7 +1,7 @@
 {
   "name": "svelte-jsx",
   "version": "1.0.2",
-  "description": "jsx for svelte",
+  "description": "jsx for svelte to simplify testing",
   "source": "src/jsx-runtime.js",
   "main": "./dist/cjs/jsx.js",
   "exports": {
@@ -59,7 +59,13 @@
   },
   "keywords": [
     "svelte",
-    "jsx"
+    "jsx",
+    "dom",
+    "jsdom",
+    "testing",
+    "ui",
+    "unit",
+    "functional"
   ],
   "author": "Sascha Tandel <s.tandel@kenoxa.de>",
   "license": "MIT",
@@ -87,7 +93,7 @@
     "eslint-plugin-react-hooks": "^4.0.4",
     "eslint-plugin-testing-library": "^3.1.3",
     "husky": "^4.2.5",
-    "jest": "^26.0.1",
+    "jest": "^26.1.0",
     "jest-environment-jsdom-sixteen": "^1.0.3",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
