@@ -1,7 +1,7 @@
 {
   "name": "svelte-jsx",
   "version": "1.0.2",
-  "description": "jsx for svelte",
+  "description": "jsx for svelte to simplify testing",
   "source": "src/jsx-runtime.js",
   "main": "./dist/cjs/jsx.js",
   "exports": {
@@ -59,7 +59,13 @@
   },
   "keywords": [
     "svelte",
-    "jsx"
+    "jsx",
+    "dom",
+    "jsdom",
+    "testing",
+    "ui",
+    "unit",
+    "functional"
   ],
   "author": "Sascha Tandel <s.tandel@kenoxa.de>",
   "license": "MIT",

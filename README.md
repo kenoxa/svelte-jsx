@@ -1,6 +1,6 @@
 # svelte-jsx
 
-> [jsx] for [svelte](https://svelte.dev/)
+> [jsx] for [svelte](https://svelte.dev/) to simplify testing
 
 [![License](https://badgen.net/npm/license/svelte-jsx)](https://github.com/kenoxa/svelte-jsx/blob/main/LICENSE)
 [![Latest Release](https://badgen.net/npm/v/svelte-jsx)](https://www.npmjs.com/package/svelte-jsx)
