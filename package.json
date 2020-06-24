@@ -1,7 +1,7 @@
 {
   "name": "svelte-jsx",
   "version": "1.0.2",
-  "description": "jsx for svelte",
+  "description": "jsx for svelte to simplify testing",
   "source": "src/jsx-runtime.js",
   "main": "./dist/cjs/jsx.js",
   "exports": {
@@ -59,7 +59,13 @@
   },
   "keywords": [
     "svelte",
-    "jsx"
+    "jsx",
+    "dom",
+    "jsdom",
+    "testing",
+    "ui",
+    "unit",
+    "functional"
   ],
   "author": "Sascha Tandel <s.tandel@kenoxa.de>",
   "license": "MIT",
@@ -73,7 +79,7 @@
     "@babel/plugin-transform-runtime": "^7.10.3",
     "@babel/preset-env": "^7.10.3",
     "@jest/globals": "^26.0.1",
-    "@rollup/plugin-babel": "^5.0.3",
+    "@rollup/plugin-babel": "^5.0.4",
     "@rollup/plugin-commonjs": "^13.0.0",
     "@rollup/plugin-node-resolve": "^8.0.1",
     "@testing-library/jest-dom": "^5.7.0",
