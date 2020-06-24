@@ -1,7 +1,7 @@
 {
   "name": "svelte-jsx",
   "version": "1.0.2",
-  "description": "jsx for svelte",
+  "description": "jsx for svelte to simplify testing",
   "source": "src/jsx-runtime.js",
   "main": "./dist/cjs/jsx.js",
   "exports": {
@@ -59,7 +59,13 @@
   },
   "keywords": [
     "svelte",
-    "jsx"
+    "jsx",
+    "dom",
+    "jsdom",
+    "testing",
+    "ui",
+    "unit",
+    "functional"
   ],
   "author": "Sascha Tandel <s.tandel@kenoxa.de>",
   "license": "MIT",
@@ -92,7 +98,7 @@
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
-    "rollup": "^2.17.1",
+    "rollup": "^2.18.0",
     "rollup-plugin-node-externals": "^2.2.0",
     "rollup-plugin-svelte": "^5.2.3",
     "rollup-plugin-terser": "^6.1.0",
