@@ -113,6 +113,6 @@
   },
   "lint-staged": {
     "*.js": "xo --fix",
-    "*.{js,css,json,md,svelte}": "prettier --ignore-path .gitignore --write"
+    "*.{js,css,json,md,svelte,yml,yaml}": "prettier --ignore-path .gitignore --write"
   }
 }
