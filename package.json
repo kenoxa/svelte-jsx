@@ -8,23 +8,18 @@
     "./package.json": "./package.json",
     ".": {
       "require": "./dist/cjs/jsx.js",
-      "umd": "./dist/umd/jsx.js",
       "default": "./dist/esm/jsx.js"
     },
     "./jsx-runtime": {
       "require": "./dist/cjs/jsx.js",
-      "umd": "./dist/umd/jsx.js",
       "default": "./dist/esm/jsx.js"
     },
     "./jsx-dev-runtime": {
       "require": "./dist/cjs/jsx.js",
-      "umd": "./dist/umd/jsx.js",
       "default": "./dist/esm/jsx.js"
     }
   },
   "module": "./dist/esm/jsx.js",
-  "unpkg": "./dist/umd/jsx.js",
-  "jsdelivr": "./dist/umd/h.js",
   "sideEffects": false,
   "files": [
     "dist",
@@ -80,7 +75,6 @@
     "@babel/preset-env": "^7.10.3",
     "@jest/globals": "^26.1.0",
     "@rollup/plugin-babel": "^5.0.4",
-    "@rollup/plugin-commonjs": "^13.0.0",
     "@rollup/plugin-node-resolve": "^8.1.0",
     "@testing-library/jest-dom": "^5.7.0",
     "@testing-library/svelte": "^3.0.0",
@@ -101,7 +95,6 @@
     "rollup": "^2.18.0",
     "rollup-plugin-node-externals": "^2.2.0",
     "rollup-plugin-svelte": "^5.2.3",
-    "rollup-plugin-terser": "^6.1.0",
     "svelte": "^3.22.3",
     "svelte-jester": "^1.0.6",
     "xo": "^0.32.0"
