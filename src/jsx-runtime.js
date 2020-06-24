@@ -24,10 +24,21 @@ export const jsxs = jsx
 // function jsxDEV(type, props , maybeKey, isStaticChildren, source, self)
 export const jsxDEV = jsx
 
-function jsxKeyToSvelte(key) {
-  if (key === 'className') return 'class'
+// Somne special jsx attribute handling: https://reactjs.org/docs/dom-elements.html
+const MAPPED_ATTRIBUTES = new Map([
+  ['className', 'class'],
+  ['htmlFor', 'for'],
+  ['tabIndex', 'tabindex'],
+  ['readOnly', 'readonly'],
+  ['autoComplete', 'autocomplete'],
+  ['autoFocus', 'autofocus'],
+  ['contentEditable', 'contenteditable'],
+  ['noValidate', 'novalidate'],
+])
 
+function jsxKeyToSvelte(key) {
   return (
+    MAPPED_ATTRIBUTES.get(key) ||
     key
       // - on_eventname => on:eventname
       // - bind_name => bind:name
