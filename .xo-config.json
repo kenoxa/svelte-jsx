@@ -3,11 +3,20 @@
   "space": true,
   "prettier": true,
   "extends": [
+    "xo-react",
     "plugin:jest/recommended",
     "plugin:jest/style",
     "plugin:jest-dom/recommended",
     "plugin:testing-library/recommended"
   ],
+  "settings": {
+    "react": {
+      "version": "16.3"
+    }
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  },
   "overrides": [
     {
       "files": "src/**/*.js",

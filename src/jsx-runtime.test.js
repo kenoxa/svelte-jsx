@@ -3,6 +3,9 @@
 import { describe, expect, jest, it } from '@jest/globals'
 import { render, fireEvent } from '@testing-library/svelte'
 
+import Counter from './__fixtures__/Counter'
+import List from './__fixtures__/List'
+
 describe('jsx', () => {
   it('supports nested html', () => {
     const { getByRole } = render(
