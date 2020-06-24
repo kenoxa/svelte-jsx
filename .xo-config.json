@@ -3,7 +3,6 @@
   "space": true,
   "prettier": true,
   "extends": [
-    "xo-react",
     "plugin:jest/recommended",
     "plugin:jest/style",
     "plugin:jest-dom/recommended",
@@ -13,14 +12,12 @@
     {
       "files": "src/**/*.js",
       "nodeVersion": ">=14"
+    },
+    {
+      "files": "*.config.js",
+      "rules": {
+        "import/no-anonymous-default-export": "off"
+      }
     }
-  ],
-  "settings": {
-    "react": {
-      "version": "16.3"
-    }
-  },
-  "rules": {
-    "react/react-in-jsx-scope": "off"
-  }
+  ]
 }
