@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.0.3](https://www.github.com/kenoxa/svelte-jsx/compare/v1.0.2...v1.0.3) (2020-06-24)
+
+
+### Bug Fixes
+
+* convert some jsx attributes ([27305b9](https://www.github.com/kenoxa/svelte-jsx/commit/27305b94bbc7d2ebfbfa30bcf20989ca803ca597))
+* remove CDN as not use for transpile module ([01ccabb](https://www.github.com/kenoxa/svelte-jsx/commit/01ccabb2edeb29097c6900a44f83bb84ea296a78))
+
 ### [1.0.2](https://www.github.com/kenoxa/svelte-jsx/compare/v1.0.1...v1.0.2) (2020-06-23)
 
 ### Bug Fixes
