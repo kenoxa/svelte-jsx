@@ -7,15 +7,13 @@ export function jsx(type, { children = [], ...props } /* , maybeKey */) {
     children = [children]
   }
 
-  return h(
-    type,
-    // Convert jsx like property names to svelte
-    Object.keys(props).reduce((newProps, key) => {
-      newProps[jsxKeyToSvelte(key)] = props[key]
-      return newProps
-    }, {}),
-    ...children,
-  )
+  // Convert jsx like property names to svelte
+  const newProps = {}
+  for (const key of Object.keys(props)) {
+    newProps[jsxKeyToSvelte(key)] = props[key]
+  }
+
+  return h(type, newProps, ...children)
 }
 
 // See https://github.com/reactjs/rfcs/blob/createlement-rfc/text/0000-create-element-changes.md#always-pass-children-as-props
