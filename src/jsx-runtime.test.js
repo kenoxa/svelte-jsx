@@ -119,7 +119,7 @@ describe('jsx', () => {
     propsToInspect.map((name, i) => {
       const argument = inspectSpy.mock.calls[i][0]
 
-      expect(argument).toHaveProperty(name, props[name])
+      return expect(argument).toHaveProperty(name, props[name])
     })
   })
 })
