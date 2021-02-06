@@ -5,6 +5,7 @@ import { render, fireEvent } from '@testing-library/svelte'
 
 import Counter from './__fixtures__/Counter'
 import List from './__fixtures__/List'
+import PropsInspector from './__fixtures__/PropsInspector'
 
 describe('jsx', () => {
   it('supports nested html', () => {
@@ -107,5 +108,18 @@ describe('jsx', () => {
 
     expect(itemsSetter).toHaveBeenCalledTimes(1)
     expect(itemsSetter).toHaveBeenCalledWith(items, 'items')
+  })
+
+  it('preserves properties beginning with `on`', () => {
+    const inspectSpy = jest.fn()
+    const props = { onFoo() {}, onbar: { baz: 'quux' } }
+    const propsToInspect = Object.keys(props)
+    render(<PropsInspector inspect={inspectSpy} propsToInspect={propsToInspect} {...props} />)
+
+    propsToInspect.map((name, i) => {
+      const argument = inspectSpy.mock.calls[i][0]
+
+      expect(argument).toHaveProperty(name, props[name])
+    })
   })
 })
