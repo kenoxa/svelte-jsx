@@ -29,23 +29,6 @@ describe('jsx', () => {
     expect(container.innerHTML).toMatch('<div><span>a</span><span>b</span></div>')
   })
 
-  it('supports click listener', async () => {
-    const handleClick = jest.fn()
-
-    const { getByRole } = render(
-      <button type="button" onClick={handleClick}>
-        Hello <strong>World</strong>!
-      </button>,
-    )
-    const button = getByRole('button')
-
-    // Using await when firing events is unique to the svelte testing library because
-    // we have to wait for the next `tick` so that Svelte flushes all pending state changes.
-    await fireEvent.click(button)
-
-    expect(handleClick).toHaveBeenCalledTimes(1)
-  })
-
   it('increments count when button is clicked', async () => {
     const { getByText } = render(<Counter />)
     const button = getByText('Count is 0')
