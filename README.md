@@ -84,7 +84,9 @@ test('should render', async () => {
 
 ## API
 
-[jsx] currently does not allow to use `:` in attribute/property names. As a workaround every `:` can be replaced be `_` (for example `bind_value` is converted to `bind:value` for svelte). For event listeners we support the standard jsx naming convention `onEventname` (this is converted to `on:eventname` in svelte) as well.
+Currently, [jsx] does not allow the use of `:` in attribute/property names. As a
+workaround, every `:` can be replaced with `_` (for example `bind_value` is converted
+to `bind:value` for Svelte).
 
 For the sake of best compatibility we convert the `className` attribute to `class` for svelte.
 
