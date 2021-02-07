@@ -45,7 +45,5 @@ function jsxKeyToSvelte(key) {
       // - ...
       // - let_name => let:name
       .replace(/^(on|bind|class|use|transition|in|animate|let)_/, '$1:')
-      // - onEventname => on:eventname
-      .replace(/^on([^:])/, (match, char) => `on:${char.toLowerCase()}`)
   )
 }

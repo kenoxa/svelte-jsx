@@ -5,6 +5,7 @@ import { render, fireEvent } from '@testing-library/svelte'
 
 import Counter from './__fixtures__/Counter'
 import List from './__fixtures__/List'
+import PropsInspector from './__fixtures__/PropsInspector'
 
 describe('jsx', () => {
   it('supports nested html', () => {
@@ -27,23 +28,6 @@ describe('jsx', () => {
     )
 
     expect(container.innerHTML).toMatch('<div><span>a</span><span>b</span></div>')
-  })
-
-  it('supports click listener', async () => {
-    const handleClick = jest.fn()
-
-    const { getByRole } = render(
-      <button type="button" onClick={handleClick}>
-        Hello <strong>World</strong>!
-      </button>,
-    )
-    const button = getByRole('button')
-
-    // Using await when firing events is unique to the svelte testing library because
-    // we have to wait for the next `tick` so that Svelte flushes all pending state changes.
-    await fireEvent.click(button)
-
-    expect(handleClick).toHaveBeenCalledTimes(1)
   })
 
   it('increments count when button is clicked', async () => {
@@ -124,5 +108,18 @@ describe('jsx', () => {
 
     expect(itemsSetter).toHaveBeenCalledTimes(1)
     expect(itemsSetter).toHaveBeenCalledWith(items, 'items')
+  })
+
+  it('preserves properties beginning with `on`', () => {
+    const inspectSpy = jest.fn()
+    const props = { onFoo() {}, onbar: { baz: 'quux' } }
+    const propsToInspect = Object.keys(props)
+    render(<PropsInspector inspect={inspectSpy} propsToInspect={propsToInspect} {...props} />)
+
+    propsToInspect.map((name, i) => {
+      const argument = inspectSpy.mock.calls[i][0]
+
+      return expect(argument).toHaveProperty(name, props[name])
+    })
   })
 })

@@ -72,7 +72,7 @@ import Button from '../src/Button.svelte'
 
 test('should render', async () => {
   let clicked = 0
-  const { getByRole } = render(<Button onClick={() => (clicked += 1)}>Click Me!</Button>)
+  const { getByRole } = render(<Button on_click={() => (clicked += 1)}>Click Me!</Button>)
 
   const button = getByRole('button')
 
