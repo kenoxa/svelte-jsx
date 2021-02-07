@@ -1,6 +1,6 @@
 # svelte-jsx
 
-> [jsx] for [svelte](https://svelte.dev/) to simplify testing
+> [jsx] for [Svelte](https://svelte.dev/) to simplify testing
 
 [![License](https://badgen.net/npm/license/svelte-jsx)](https://github.com/kenoxa/svelte-jsx/blob/main/LICENSE)
 [![Latest Release](https://badgen.net/npm/v/svelte-jsx)](https://www.npmjs.com/package/svelte-jsx)
@@ -15,11 +15,11 @@
 
 ## What?
 
-Write svelte components in [jsx].
+Write Svelte components in [jsx].
 
 ## Why?
 
-This is especially useful for [testing svelte components](https://github.com/svelte-society/recipes-mvp/blob/master/testing.md).
+This is especially useful for [testing Svelte components](https://github.com/svelte-society/recipes-mvp/blob/master/testing.md).
 
 ## Installation
 
@@ -29,7 +29,9 @@ npm install --save-dev svelte-jsx
 
 ### Babel Configuration
 
-This packages allows to use svelte with [jsx] (see [@babel/plugin-transform-react-jsx](https://babeljs.io/docs/en/babel-plugin-transform-react-jsx)). A [working babel setup](https://babeljs.io/setup) is therefore required.
+This package allows you to write Svelte using the [jsx] syntax (see
+[@babel/plugin-transform-react-jsx](https://babeljs.io/docs/en/babel-plugin-transform-react-jsx)).
+A [working babel setup](https://babeljs.io/setup) is therefore required.
 
 In your [babel configuration file](https://babeljs.io/docs/en/configuration) add:
 
@@ -41,7 +43,8 @@ In your [babel configuration file](https://babeljs.io/docs/en/configuration) add
 }
 ```
 
-Or if you already use [@babel/preset-react](https://babeljs.io/docs/en/babel-preset-react) make sure `runtime` is set to `automatic`:
+or, if you already use [@babel/preset-react](https://babeljs.io/docs/en/babel-preset-react),
+make sure `runtime` is set to `automatic`:
 
 ```json
 {
@@ -49,7 +52,9 @@ Or if you already use [@babel/preset-react](https://babeljs.io/docs/en/babel-pre
 }
 ```
 
-If it not an option to use `svelte-jsx` as an `importSource` globally for the project, it is possible to use the [@jsxImportSource](https://babeljs.io/docs/en/babel-plugin-transform-react-jsx#customizing-the-automatic-runtime-import) pragma within a file:
+If you're unable to use `svelte-jsx` as a global `importSource` for your project,
+you may use the [@jsxImportSource](https://babeljs.io/docs/en/babel-plugin-transform-react-jsx#customizing-the-automatic-runtime-import)
+pragma within a file:
 
 ```js
 /** @jsxImportSource svelte-jsx */
@@ -63,7 +68,7 @@ render(
 
 ## Usage
 
-> Please note the differences to svelte component syntax [outlined below](#api).
+> Please note the differences to the Svelte component syntax [outlined below](#api).
 
 ```js
 import { render, fireEvent } from '@testing-library/svelte'
@@ -84,13 +89,17 @@ test('should render', async () => {
 
 ## API
 
-[jsx] currently does not allow to use `:` in attribute/property names. As a workaround every `:` can be replaced be `_` (for example `bind_value` is converted to `bind:value` for svelte). For event listeners we support the standard jsx naming convention `onEventname` (this is converted to `on:eventname` in svelte) as well.
+Currently, [jsx] does not allow the use of `:` in attribute/property names. As a
+workaround, every `:` can be replaced with `_` (for example `bind_value` is converted
+to `bind:value` for Svelte).
 
-For the sake of best compatibility we convert the `className` attribute to `class` for svelte.
+For Svelte compatibility we convert `className` to `class`.
 
-We [aim to support](https://github.com/kenoxa/svelte-hyperscript#feature-set) all svelte features. In some cases this is not possible. For those cases we provided feasible workarounds. See [svelte-hyperscript] for further details.
+We [aim to support](https://github.com/kenoxa/svelte-hyperscript#feature-set) all
+Svelte features. In some cases this is not possible. For those cases we provided feasible
+workarounds. See [svelte-hyperscript] for further details.
 
-Some notable differences are:
+Some notable differences include:
 
 - Using [stores](https://svelte.dev/docs#svelte_store) to allow reactivity
 
@@ -121,21 +130,28 @@ Some notable differences are:
 
 ## Related Projects
 
-- [svelte-htm] - [**H**yperscript **T**agged **M**arkup](https://www.npmjs.com/package/htm) for svelte; a jsx-like [syntax](https://www.npmjs.com/package/htm#syntax-like-jsx-but-also-lit) using [Tagged Templates]
+- [svelte-htm] - [**H**yperscript **T**agged **M**arkup](https://www.npmjs.com/package/htm)
+  for Svelte; a jsx-like [syntax](https://www.npmjs.com/package/htm#syntax-like-jsx-but-also-lit)
+  using [Tagged Templates]
 - [svelte-hyperscript] - the core of this implementation
 - [svelte-fragment-component] - a utility component
-- [@testing-library/svelte](https://testing-library.com/docs/svelte-testing-library/intro) - helps to test UI components in a user-centric way
+- [@testing-library/svelte](https://testing-library.com/docs/svelte-testing-library/intro) -
+  helps to test UI components in a user-centric way
 - [reactjs/rfcs/0000-create-element-changes](https://github.com/reactjs/rfcs/blob/createlement-rfc/text/0000-create-element-changes.md)
 
 ## Support
 
-This project is free and open-source, so if you think this project can help you or anyone else, you may [star it on GitHub](https://github.com/kenoxa/svelte-jsx). Feel free to [open an issue](https://github.com/kenoxa/svelte-jsx/issues) if you have any idea, question, or you've found a bug.
+This project is free and open-source, so if you think this project can help you or
+anyone else, you may [star it on GitHub](https://github.com/kenoxa/svelte-jsx). Feel
+free to [open an issue](https://github.com/kenoxa/svelte-jsx/issues) if you have any
+ideas, questions, or if you've found a bug.
 
 ## Contribute
 
 Thanks for being willing to contribute!
 
-**Working on your first Pull Request?** You can learn how from this _free_ series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
+**Working on your first Pull Request?** You can learn how from this _free_ series
+[How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
 
 We are following the [Conventional Commits](https://www.conventionalcommits.org) convention.
 
